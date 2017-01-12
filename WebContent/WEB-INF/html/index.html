@@ -1,51 +1,17 @@
 ﻿<!DOCTYPE html>
-
-<html lang="ko" id="gainmuseum">
+<html lang="ko">
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex,follow" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <script type="text/javascript" src="jquery-1.11.3.js"></script>
-	<script type="text/javascript" src="jquery-ui.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="gm-common.js"></script>
-    <title>ㄱㅇㅁㅈㅇ</title>
-    <style>
-       /* body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,span, a {margin:0; padding:0; color:white;}
-        @media (min-width:400px) and (max-width:799px) {.header{padding:2px 2px;}
-                                  .logo{}
-        }
-        @media (min-width:800px) and (max-width:1199px) {.header{padding:6px 8px;}
-                                  .logo{}
-        }
-        @media (min-width:1200px) {.header{padding:10px 15px;}
-                                   .logo{}
-        }
-        
-        
-        div {display:block;} */
-        body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,span, a {color:white;}
-        ol,ul,li {list-style:none;}
-        body{background-color:#1b1b1b; margin:0; padding:0;}
-        .wrap{padding-top:70px;}
-        .header_wrap{height:40px; width:100%;min-width: 1350px; background-color:#1a1a1a;line-height:40px;position:fixed;text-align:center;border-bottom:1px; border-bottom-color:gray;border-bottom-style:solid; z-index:5; padding:10px; }
-        .header{width:auto;display:flex; justify-content:space-between;position:static; }
-        .header .headerUl ul {overflow:hidden; float:right;}
-		.header .headerUl ul li {display:inline-block; padding:0 10px}
-		.header .headerUl ul li:first-child {background:none;}
-		.header .headerUl ul li a {color:#555;}
-		.header .headerUl ul li a span {color:#00abbe;}
-        .logo{width:150px; height:50px;}
-        .search_wrap{float:none;width:auto;position:inherit;white-space:nowrap;height: 60px; }
-        .search_sel, .search_sel option{color:black; border-radius:20px 20px; padding:5px 10px;}
-        .input_text{border-radius:20px 20px; color:black; padding:5px;width:600px;position:relative; min-width:initial; box-sizing:border-box;}
-        .sch_smit{display:none;}
-        .my_item2{width:330px; max-height:500px; background-color:#2b2a2a; border-radius:5px;}
-        .sub_item div{float:left; background-color:#1a1a1a; padding:5px; padding-left:10px; margin:5px; border-radius:20px;text-align:center;}
-        div.dropdown{display:initial;}
-        
-    </style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GainMuseum</title>
+<link href="bootstrap.css" rel="stylesheet">
+<link href="bootstrap-datetimepicker.css" rel="stylesheet">
+<link href="common.css" rel="stylesheet">
+<script type="text/javascript" src="jquery-1.11.3.js"></script>
+<script type="text/javascript" src="jquery-ui.js"></script>
+<script type="text/javascript" src="bootstrap.js"></script>
+<script type="text/javascript" src="gm-common.js"></script>
 <script type="text/javascript">
 	$(function() {
 		$.gm.dropdown('select[data-gm-dropdown]');
@@ -54,102 +20,75 @@
 </head>
 <body>
 	<div class="header_wrap">
-            <div class="header">
-                <div class="logo">
-                    <a href="#"><img src="gain_museum_logo.png" title="gainmuseum" /></a>
-                </div>
-                <div class="search_wrap">
-                    <!-- <select class="search_sel">
-                        <option selected>ALL</option>
-                        <option>작가</option>
-                        <option>아티스트</option>
-                        <option>디자이너</option>
-                        <option>감독</option>
-                        <option>뮤지션</option>
-                    </select> -->
-					<select id="dropdrop" data-gm-dropdown style="width:100px;" >
-						<option value="ALL">ALL</option>
-						<option value="작가">작가</option>
-						<option value="아티스트">아티스트</option>
-						<option value="디자이너">디자이너</option>
-						<option value="감독">감독</option>
-						<option value="뮤지션">뮤지션</option>
-					</select>
-                    <span class="search_bar">
-                        <input type='text' class='input_text'placeholder="검색" />
-                    </span>
-                    <div class="search_smit">
-                        <button type='submit' class='sch_smit'>검색</button>
-                    </div>
-                </div>
-                <div>
-                	<ul class="headerUl">
-						<li><a href=""><span>홍길동</span>님 환영합니다</a></li>
-						<li><a href="">Logout</a></li>
-						<li><a href="">이용약관</a></li>
-						<li><a href="">관리자홈</a></li>
-					</ul>
-                </div>
-            </div>
-        </div>
+		<div class="header">
+			<div class="logo">
+					<a href="#"><img src="gain_museum_logo.png" title="gainmuseum" /></a>
+			</div>
+			<div class="search_wrap">
+				<select id="dropdrop" data-gm-dropdown style="width:100px;" >
+					<option value="ALL">ALL</option>
+					<option value="작가">작가</option>
+					<option value="아티스트">아티스트</option>
+					<option value="디자이너">디자이너</option>
+					<option value="감독">감독</option>
+					<option value="뮤지션">뮤지션</option>
+				</select>
+				<span class="search_bar">
+					<input type='text' class='input_text'placeholder="검색" />
+				</span>
+				<div class="search_smit">
+					<button type='submit' class='sch_smit'>검색</button>
+				</div>
+			</div>
+			<div>
+				<ul class="headerUl">
+					<li><a href=""><span>홍길동</span>님 환영합니다</a></li>
+					<li><a href="">Logout</a></li>
+					<li><a href="">이용약관</a></li>
+					<li><a href="">관리자홈</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
     <div class="wrap">
 		<div id="contents_wrap">
 			<form method="post">
-			
-			<!-- 컨텐츠 시작 -->
-			<div class="container" style="width: 1300px;  margin-left: auto; margin-right:auto;position:relative ">
-				<div class="item_image" style="width:615px;  margin-left: auto; margin-right: auto;max-height:1000px; background-size:cover;">
-                	<img src="06.jpg" style="width: 615px;">
-                	<div class="item_text">채영다현나연쯔위사나모모미나정연지효</div>
-                </div>
-                <div class="my_item2" style="position: absolute; right:0px; bottom: 0px;">
-                     <div class="item_title">사나사진</div>
-                     <div class="my_photo"></div>
-                     <div class="my_name">하틀러</div>
-                     <div class="my_job">트와이스 팬 아티스트</div>
-                     <div class="sub_item">
-                         <div class="up">high</div>
-                         <div class="comments">comments</div>
-                         <div class="share">share</div>
-                     </div>
-                 </div>
-			</div>
-			
-			<div class="container" style="width: 1300px;  margin-left: auto; margin-right:auto;position:relative ">
-				<div class="item_image" style="width:615px;  margin-left: auto; margin-right: auto;max-height:1000px; background-size:cover;">
-                	<img src="12342351235897789.JPG" style="width: 615px;">
-                	<div class="item_text">채영다현나연쯔위사나모모미나정연지효</div>
-                </div>
-                <div class="my_item2" style="position: absolute; right:0px; bottom: 0px;">
-                     <div class="item_title">사나사진</div>
-                     <div class="my_photo"></div>
-                     <div class="my_name">하틀러</div>
-                     <div class="my_job">트와이스 팬 아티스트</div>
-                     <div class="sub_item">
-                         <div class="up">high</div>
-                         <div class="comments">comments</div>
-                         <div class="share">share</div>
-                     </div>
-                 </div>
-			</div>
+				<div class="container" style="width: 1300px;  margin-left: auto; margin-right:auto;position:relative ">
+					<div class="item_image" style="width:615px;  margin-left: auto; margin-right: auto;max-height:1000px; background-size:cover;">
+						<img src="06.jpg" style="width: 615px;">
+						<div class="item_text">채영다현나연쯔위사나모모미나정연지효</div>
+                	</div>
+	                <div class="my_item2" style="position: absolute; right:0px; bottom: 0px;">
+						<div class="item_title">사나사진</div>
+						<div class="my_photo"></div>
+						<div class="my_name">하틀러</div>
+						<div class="my_job">트와이스 팬 아티스트</div>
+						<div class="sub_item">
+							<div class="up">high</div>
+							<div class="comments">comments</div>
+							<div class="share">share</div>
+						</div>
+					</div>
+				</div>
+				<div class="container" style="width: 1300px;  margin-left: auto; margin-right:auto;position:relative ">
+					<div class="item_image" style="width:615px;  margin-left: auto; margin-right: auto;max-height:1000px; background-size:cover;">
+						<img src="12342351235897789.JPG" style="width: 615px;">
+						<div class="item_text">채영다현나연쯔위사나모모미나정연지효</div>
+					</div>
+					<div class="my_item2" style="position: absolute; right:0px; bottom: 0px;">
+						<div class="item_title">사나사진</div>
+						<div class="my_photo"></div>
+						<div class="my_name">하틀러</div>
+						<div class="my_job">트와이스 팬 아티스트</div>
+						<div class="sub_item">
+							<div class="up">high</div>
+							<div class="comments">comments</div>
+							<div class="share">share</div>
+						</div>
+					</div>
+				</div>
 			</form>
 		</div>
-
-        <!-- <div class="container_wrap">
-            <div class="container">
-                <div class="item_wrap">
-                    <div class="my_item">
-                        <div class="item_image">
-                        	<img src="06.jpg">
-                        </div>
-                        <div class="item_text">채영다현나연쯔위사나모모미나정연지효</div>
-
-                    </div>
-                    
-                </div>
-            </div>
-        </div> -->
-    </div>
-
+	</div>
 </body>
 </html>
