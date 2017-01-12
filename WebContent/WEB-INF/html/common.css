@@ -2,17 +2,17 @@ body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,inpu
 ol,ul,li {list-style:none;}
 body{background-color:#1b1b1b; margin:0; padding:0;}
 .wrap{padding-top:70px;}
-.header_wrap{height:40px; width:100%;min-width: 1350px; background-color:#1a1a1a;line-height:40px;position:fixed;text-align:center;border-bottom:1px; border-bottom-color:gray;border-bottom-style:solid; z-index:5; padding:10px; }
+.header_wrap{height:40px; width:100%;min-width: 1350px; background-color:#1a1a1a;line-height:40px;position:fixed;text-align:center;border-bottom:1px; border-bottom-color:gray;border-bottom-style:solid; z-index:5;  }
 .header{width:auto;display:flex; justify-content:space-between;position:static; }
-.header .headerUl ul {overflow:hidden; float:right;}
-.header .headerUl ul li {display:inline-block; padding:0 10px}
-.header .headerUl ul li:first-child {background:none;}
-.header .headerUl ul li a {color:#555;}
-.header .headerUl ul li a span {color:#00abbe;}
+.header ul.headerUl {overflow:hidden; float:right;}
+.header ul.headerUl li {display:inline-block; padding:0 10px}
+.header ul.headerUl li:first-child {background:none;}
+.header ul.headerUl li a {color:#555;}
+.header ul.headerUl li a span {color:#00abbe;}
 .logo{width:150px; height:50px;}
 .search_wrap{float:none;width:auto;position:inherit;white-space:nowrap;height: 60px; }
 .search_sel, .search_sel option{color:black; border-radius:20px 20px; padding:5px 10px;}
-.input_text{border-radius:20px 20px; color:black; padding:5px;width:600px;position:relative; min-width:initial; box-sizing:border-box;}
+.input_text{border-radius:20px 20px; color:black; padding:5px;width:600px;position:relative; min-width:initial; box-sizing:border-box;height: 35px;}
 .sch_smit{display:none;}
 .my_item2{width:330px; max-height:500px; background-color:#2b2a2a; border-radius:5px;}
 .sub_item div{float:left; background-color:#1a1a1a; padding:5px; padding-left:10px; margin:5px; border-radius:20px;text-align:center;}
